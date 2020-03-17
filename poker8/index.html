@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>八卦纸牌</title>
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+	<body oncontextmenu="return false">
+		<div id="container">
+			<div id="box">
+				<h1>♠♥ 八 卦 纸 牌 ♦♣</h1>
+				<div id="desk">
+					<div class="border">
+						<div></div><div></div><div></div><div></div>
+						<div></div><div></div><div></div><div></div>
+					</div>
+					<ul id="left">
+						<li id="col0" class="col"></li>
+						<li id="col1" class="col"></li>
+						<li id="col2" class="col"></li>
+						<li id="col3" class="col"></li>
+						<li id="col4" class="col"></li>
+						<li id="col5" class="col"></li>
+						<li id="col6" class="col"></li>
+						<li id="col7" class="col"></li>
+					</ul>
+					<div id="mask"></div>
+					<div id="right">
+						<div id="cardsBox"></div>
+						<div id="board">
+							<h5>说明：</h5>
+							<p>1. 只有相同花色的牌才能排在一起，且从大到小排列。</p>
+							<p>2. 只能把牌面是K的牌放到没有牌的列上。</p>
+							<p>3. 4个花色的牌都按从大到小顺的序排列完毕时，游戏完成。</p>
+							<p>4. 如果没有可以继续排列的步骤时，请重新开始。</p>
+						</div>
+						<div id="btn" onclick="start(this)">开始</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/poker.js"></script>
+		<script src="js/js.js"></script>
+	</body>
+</html>
